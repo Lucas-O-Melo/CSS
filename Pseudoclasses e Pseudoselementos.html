@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body{
+        font-size: 2rem;
+    }
+
+#container{
+    width: 1070px;
+    margin: 0 auto;
+  /*display: flex;*/
+  /*flex-direction: row;*/ /*todos os elementos numa única linha*/
+  /*flex-direction: column;*/ /*todos os elementos numa única coluna*/
+}
+
+/*Uso da pseudoclasse :hover*/
+#link :hover{
+    color: orange;
+}
+
+/*Uso do pseudoelemento ::first-line*/
+#container-texto::first-line{
+    color: blue;
+    text-transform: uppercase;
+}
+</style>
+</head>
+<body>
+    <div id="container">
+        <h1>PseudoClasses</h1>
+        <a href="#" id="link">Link</a>
+
+        <h1>PseudoElementos</h1>
+        <p id="container-texto">
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+            zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz.
+            ccccccccccccccccccccccccccccccccccccccccccccccccc.
+        </p>
+    </div>
+</body>
+</html>
